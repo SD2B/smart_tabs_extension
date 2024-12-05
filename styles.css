@@ -1,0 +1,170 @@
+/* Styling for the header section with logo and title */
+#header {
+    display: flex;
+    align-items: center; /* Vertically align the logo and text */
+    margin-bottom: 20px;
+}
+
+#logo {
+    width: 40px; /* Set the logo size */
+    height: 40px;
+    margin-right: 10px; /* Space between logo and title */
+}
+
+h1 {
+    font-size: 24px;
+    color: #e0e0e0; /* Text color for the title */
+    margin: 0; /* Remove default margin for h1 */
+}
+
+/* General styling for the body */
+html, body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 2px;
+    border-radius: 15px;
+    background:  #1f1f1f;
+    overflow: hidden;
+}
+
+#app {
+    width: 300px;
+    padding: 15px;
+    padding-right: 15px;
+    background: #121212;
+    color: #e0e0e0; /* Light text color */
+    border-radius: 15px; /* Apply border radius to the popup */
+    overflow: hidden; /* Ensure no content overflows the rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Apply shadow to the whole container */
+}
+
+/* Input search bar styling */
+#search {
+    width: 91%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #ffffff;
+    background: #1f1f1f; /* Darker input field */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#search::placeholder {
+    color: #757575; /* Placeholder color */
+}
+
+/* Styling for the tab list container */
+#tab-list {
+    /* width: 100%; */
+    max-height: 350px;
+    overflow-y: auto;
+    border: 1px solid #333333; /* Subtle border for the list */
+    padding: 10px;
+    border-radius: 8px;
+    background: #1c1c1c; /* Slightly lighter than background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Individual tab item styling */
+.tab-item {
+    margin: 8px 0;
+    padding: 10px;
+    background: #252525; /* Darker tab item background */
+    border: 1px solid #333333; /* Subtle border */
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Container for tab title and favicon */
+.tab-info {
+    display: flex;
+    align-items: center;
+}
+
+/* Favicon styling */
+.tab-favicon {
+    width: 16px; /* Size of the favicon */
+    height: 16px;
+    margin-right: 10px; /* Space between favicon and title */
+}
+
+/* Tab name styling with fixed width */
+.tab-title {
+    width: 150px; /* Fixed width for the tab title */
+    overflow: hidden; /* Prevent overflow if the title is too long */
+    text-overflow: ellipsis; /* Add "..." for overflowing text */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Button inside each tab item */
+.tab-item .switch-btn {
+    width: 80px;
+    padding: 6px 12px;
+    background: #3a3a3a; /* Neutral button color */
+    border: none;
+    color: #e0e0e0; /* Light text */
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.tab-item .switch-btn:hover {
+    background: #505050; /* Lighter shade on hover */
+    transform: scale(1.05);
+}
+
+
+/* Save and Load session buttons */
+button {
+    width: 99%;
+    padding: 12px;
+    margin: 10px 1%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #252525; /* Match tab-item style */
+    color: #e0e0e0; /* Light text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #333333; /* Lighter shade on hover */
+    transform: scale(1.05);
+}
+
+/* Scrollbar styling */
+#tab-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#tab-list::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 4px;
+}
+
+#tab-list::-webkit-scrollbar-thumb:hover {
+    background: #505050;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 500px) {
+    body {
+        width: 100%; /* Use full width on small screens */
+    }
+
+    #tab-list {
+        max-height: 250px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
