@@ -55,3 +55,20 @@ Feel free to fork the repository, make changes, and submit a pull request.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+
+## Author
+
+Developed with ❤️ by [Sanoop Das](https://sanoop.dev). Connect with me on [LinkedIn](https://www.linkedin.com/in/sd2b/).
+
+---
+
+## Support
+
+If you like this extension, please give it a ⭐ on [Chrome Web Store](https://chromewebstore.google.com/detail/smart-tabs/oenfbgefejnhnbgajmdfkljopohlmnhf?hl=en-US&utm_source=ext_sidebar) and share it with the Flutter community!
+
+---
+
+Happy Coding!
