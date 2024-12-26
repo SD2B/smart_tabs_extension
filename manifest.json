@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Smart Tabs",
-    "version": "1.0",
+    "version": "2.1",
     "description": "Manage and search your tabs easily and save sessions for resuming your work",
     "permissions": ["tabs", "storage"],
     "background": {
